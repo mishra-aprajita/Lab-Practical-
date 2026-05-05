@@ -4,12 +4,12 @@ export default function LikeButton() {
   const [isLiked, setIsLiked] = useState(false);
 
   return (
-    <div style={{ padding: '20px', textAlign: 'center', border: '1px solid pink' }}>
+    <div>
       <h2>Toggle Like</h2>
       <button 
       
         onClick={() => setIsLiked(prev => !prev)}
-        style={{ fontSize: '50px', cursor: 'pointer', background: 'none', border: 'none' }}
+      
       >
         {isLiked ? '❤️' : '🤍'}
       </button>
